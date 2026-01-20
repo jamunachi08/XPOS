@@ -1,0 +1,20 @@
+[build-system]
+requires = ["flit_core>=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "alphax_pos_suite"
+authors = [{name = "AlphaX"}]
+description = "Unified POS Suite for ERPNext (Restaurant/Cafe/Retail/Pharma)"
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["version"]
+dependencies = [
+  "frappe>=15.0.0",
+]
+
+[project.urls]
+Home = "https://github.com/<your-org>/alphax_pos_suite"
+
+[tool.flit.module]
+name = "alphax_pos_suite"
